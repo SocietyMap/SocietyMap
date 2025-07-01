@@ -1,0 +1,32 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.tfplan
+
+# VS Code settings
+.vscode/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Jupyter (if used)
+.ipynb_checkpoints/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
