@@ -10,6 +10,6 @@ terraform {
 
 provider "aws" {
     region                  = "us-west-2"
-    shared_credentials_files = "C:\\Users\\Prodesk\\.aws"
+    shared_credentials_files = ["C:\\Users\\Prodesk\\.aws\\credentials"]
     profile                 = "default"
 }
