@@ -3,7 +3,8 @@ variable "aws_region" {
 }
 
 variable "aws_profile" {
-  default = "default"
+  default = "terraform-admin"
+  
 }
 
 variable "vpc_id" {

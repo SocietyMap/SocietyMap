@@ -1,7 +1,19 @@
-provider "aws" {
+/* provider "aws" {
   region  = var.aws_region
   profile = var.aws_profile
 }
+*/
+resource "aws_s3_bucket" "society_map_storage" {
+  bucket = "amandeep-society-map-${random_id.suffix.hex}"
+  force_destroy = true
+}
+  
+
+resource "random_id" "suffix" {
+  byte_length = 4
+}
+
+
 
 resource "aws_neptune_cluster" "society_map" {
   cluster_identifier      = "society-map-free"
